@@ -2483,7 +2483,7 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"<b>ʜᴇʏ 👋🏻 {message.from_user.mention} 😍\n\n<i>🎬 ᴛɪᴛʟᴇ : {search}\n🎫 ʏᴏᴜʀ ғɪʟᴇs ɪs ʀᴇᴀᴅʏ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ</i></b>"
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_photo('https://telegra.ph/file/0c64eecbcc5751347862a.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(900)
             await hehe.delete()
             await message.reply_text(text=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Bʏ {message.from_user.mention} Cʟᴏꜱᴇᴅ 🗑️", disable_notification = True)
@@ -2495,11 +2495,11 @@ async def auto_filter(client, msg, spoll=False):
             await hmm.edit_text(text=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Bʏ {message.from_user.mention} Cʟᴏꜱᴇᴅ 🗑️", disable_notification = True)
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_photo('https://telegra.ph/file/0c64eecbcc5751347862a.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(900)
             await fek.edit_text(text=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Bʏ {message.from_user.mention} Cʟᴏꜱᴇᴅ 🗑️")
     else:
-        fuk = await message.reply_text(text=cap, disable_web_page_preview=True, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo('https://telegra.ph/file/0c64eecbcc5751347862a.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(900)
         await fuk.delete()
         await message.reply_text(text=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Bʏ {message.from_user.mention} Cʟᴏꜱᴇᴅ 🗑️")

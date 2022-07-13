@@ -134,9 +134,9 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📟 Files: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'🎁 ᴛɪᴘs', 'tips'),
-            InlineKeyboardButton(f'📮 ɪɴғᴏ', 'info')
+            InlineKeyboardButton(f'🎫 ғɪʟᴇs: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'💡 ᴛɪᴘs', 'tips'),
+            InlineKeyboardButton(f'ℹ️ ɪɴғᴏ', 'info')
         ]
     )
 
@@ -167,7 +167,7 @@ async def next_page(bot, query):
             )
     btn.insert(0,
             [
-                InlineKeyboardButton("🔘 Group", url="https://t.me/+2sQ2BQEEAlhlMjUx"),
+                InlineKeyboardButton("🔘 Group", url="https://t.me/+nam0eRztrW84ZGM1"),
                 InlineKeyboardButton("Dev 🔘", url="https://t.me/iAmLiKu1")
             ])
 
@@ -2434,7 +2434,7 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="ɴᴇxᴛ ☞︎︎︎", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="🌐 ᴊᴏɪɴ ᴏᴜʀ ᴄᴀɴɴᴇʟ 🌐",url="https://t.me/+tkAjvYxAr7VmZjY1")]
+            [InlineKeyboardButton(text="🌐 ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ 🌐",url="https://t.me/+tkAjvYxAr7VmZjY1")]
         )
     else:
         btn.append(

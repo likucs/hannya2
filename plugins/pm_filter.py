@@ -2393,7 +2393,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🏷️[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -2402,11 +2402,11 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🛸{file.file_name}",
+                    text=f"📁{file.file_name}",
                     callback_data=f'{pre}#{file.file_id}',
                 ),
                 InlineKeyboardButton(
-                    text=f"🛸{get_size(file.file_size)}",
+                    text=f"📁{get_size(file.file_size)}",
                     callback_data=f'{pre}_#{file.file_id}',
                 ),
             ]
@@ -2419,7 +2419,7 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📟 ғɪʟᴇs: {total_results}', 'dupe'),
+            InlineKeyboardButton(f'💌 ғɪʟᴇs: {total_results}', 'dupe'),
             InlineKeyboardButton(f'💡 ᴛɪᴘs', 'tips'),
             InlineKeyboardButton(f'ℹ️ ɪɴғᴏ', 'info')
         ]
@@ -2431,7 +2431,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton(text=f"💠 1/{round(int(total_results) / 10)}", callback_data="pages"),
-             InlineKeyboardButton(text="ɴᴇxᴛ 🚥", callback_data=f"next_{req}_{key}_{offset}")]
+             InlineKeyboardButton(text="ɴᴇxᴛ ➡️", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
             [InlineKeyboardButton(text="🌐 ᴊᴏɪɴ ᴏᴜʀ ᴄᴀɴɴᴇʟ 🌐",url="https://t.me/+tkAjvYxAr7VmZjY1")]
@@ -2480,7 +2480,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ʜᴇʏ 👋🏻 {message.from_user.mention} 😍\n\n<i>🔖 Title : {search}\nɪᴍᴅʙ : {rating}\nʏᴇᴀʀ : {year}\n🎬 Your Files is Ready To Download</i></b>"
+        cap = f"<b>ʜᴇʏ 👋🏻 {message.from_user.mention} 😍\n\n<i>🎬 ᴛɪᴛʟᴇ : {search}\n🎫 ʏᴏᴜʀ ғɪʟᴇs ɪs ʀᴇᴀᴅʏ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ</i></b>"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo('https://telegra.ph/file/0c64eecbcc5751347862a.jpg', caption=cap, reply_markup=InlineKeyboardMarkup(btn))

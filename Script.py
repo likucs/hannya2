@@ -1,13 +1,13 @@
 class script(object):
     START_TXT = """<b>𝖧ᴇʟʟᴏ {} 🙋🏻‍♂️
-𝖬ʏ 𝖭ᴀᴍᴇ ɪs <a href='https://t.me/mcmoviesData2_Bot'>Lᴇᴠɪ .</a> 𝖠 𝖲ᴍᴀʀᴛ 𝖱ᴏʙᴏᴛ 𝖶ɪᴛʜ 𝖬ᴀɴʏ 𝖠ᴍᴀᴢɪɴɢ 𝖥ᴇᴀᴛᴜʀᴇs. 𝖨 𝖢ᴀɴ 𝖯ʀᴏᴠɪᴅᴇ 𝖬ᴏᴠɪᴇs & 𝖧ᴇʟᴘ 𝖸ᴏᴜ 𝖳ᴏ 𝖬ᴀɴᴀɢᴇ 𝖸ᴏᴜʀ 𝖦ʀᴏᴜᴘs, 𝖩ᴜsᴛ 𝖠ᴅᴅ 𝖬ᴇ 𝖳ᴏ 𝖸ᴏᴜʀ 𝖦ʀᴏᴜᴘ 𝖠s 𝖠ᴅᴍɪɴ 𝖠ɴᴅ 𝖤ɴᴊᴏʏ.....🥰</b>
+𝖬ʏ 𝖭ᴀᴍᴇ ɪs <a href='https://t.me/mcmoviesData2_Bot'>ʜᴀɴɴʏᴀ</a> 𝖠 𝖲ᴍᴀʀᴛ 𝖱ᴏʙᴏᴛ 𝖶ɪᴛʜ 𝖬ᴀɴʏ 𝖠ᴍᴀᴢɪɴɢ 𝖥ᴇᴀᴛᴜʀᴇs. 𝖨 𝖢ᴀɴ 𝖯ʀᴏᴠɪᴅᴇ 𝖬ᴏᴠɪᴇs & 𝖧ᴇʟᴘ 𝖸ᴏᴜ 𝖳ᴏ 𝖬ᴀɴᴀɢᴇ 𝖸ᴏᴜʀ 𝖦ʀᴏᴜᴘs, 𝖩ᴜsᴛ 𝖠ᴅᴅ 𝖬ᴇ 𝖳ᴏ 𝖸ᴏᴜʀ 𝖦ʀᴏᴜᴘ 𝖠s 𝖠ᴅᴍɪɴ 𝖠ɴᴅ 𝖤ɴᴊᴏʏ.....🥰</b>
 """
     HELP_TXT = """<b>𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌</b>: 
 /start - 𝖼𝗁𝖾𝖼𝗄 𝗐𝗁𝖾𝗍𝗁𝖾𝗋 𝗂𝗆 𝗈𝗇𝗅𝗂𝗇𝖾 
 /help - 𝗀𝖾𝗍 𝗍𝗁𝗂𝗌 𝗁𝖾𝗅𝗉 𝗆𝖾𝗌𝗌𝖺𝗀𝖾
 /about - 𝖺𝖻𝗈𝗎𝗍 𝗆𝖾"""
     ABOUT_TXT = """
-<b>🤖 ʙᴏᴛ ɴᴀᴍᴇ: <a href='https://t.me/mcmoviesData2_Bot'>Lᴇᴠɪ</a>
+<b>🤖 ʙᴏᴛ ɴᴀᴍᴇ: <a href='https://t.me/mcmoviesData2_Bot'>ʜᴀɴɴʏᴀ</a>
 📝 ʟᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/'>ᴘʏᴛʜᴏɴ</a>
 📚 ꜰʀᴀᴍᴇᴡᴏʀᴋ : <a href='https://github.com/pyrogram/pyrogram'>ᴘʏʀᴏɢʀᴀᴍ</a>
 📡 ʜᴏsᴛᴇᴅ ᴏɴ : <a href='http://heroku.com/'>ʜᴇʀᴏᴋᴜ</a>

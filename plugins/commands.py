@@ -59,7 +59,7 @@ async def start(client, message):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAIBBGJq86iOuXxD7TOO-SGlIXjIoBntAAINAAPBJDExIlgkiJLZ-AMeBA") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAECxEtizwk-bJNT0D2Ffp_PteOKQkYXygACqQQAAgVvgFQFdiyvB2HNRx4E") 
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_chat_action("typing")
@@ -70,7 +70,7 @@ async def start(client, message):
             parse_mode='html'
         )
         await message.reply_chat_action("Typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAIBHGJs9cbIgO3Z_Z-kuCGjsbUG7T3sAAIRAAPBJDExlR4ZhzVeZjYeBA") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAECxEtizwk-bJNT0D2Ffp_PteOKQkYXygACqQQAAgVvgFQFdiyvB2HNRx4E") 
         await asyncio.sleep(20)
         await m.delete()
         return
